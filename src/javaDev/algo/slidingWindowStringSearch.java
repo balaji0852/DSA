@@ -83,7 +83,7 @@ public class slidingWindowStringSearch {
         System.out.println("findSlidingWindowStringSearch");
 //        System.out.println(findSlidingWindowStringSearch("balajicharacters","abc"));
 //        System.out.println(findSlidingWindowStringSearch("asb2.9d/d!304#b$%^%!ksd,2294iubasdmc","b$#2"));
-        System.out.println(findSlidingWindowStringSearch("xad9dk0293nc","xd3"));
+        System.out.println(findSlidingWindowStringSearch("xyz","xyyzyzyx"));
 //        System.out.println(findSlidingWindowStringSearch("balajia","aa"));
 //        System.out.println(findSlidingWindowStringSearch("gho8cbb","bob"));
 

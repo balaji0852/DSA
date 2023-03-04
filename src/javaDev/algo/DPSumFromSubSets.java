@@ -8,7 +8,7 @@ public class DPSumFromSubSets {
         //q3. find subsets of a array whose sum is equal to give array. sol below
 //        theory: finding a sum in a sub set, can be formed by n elements, we can add and skip the nth elements as per our required sum. If the nth element falls under sum adding it to the count, it will form the required sum from its subsets of array.
 //
-//        step 1. bases case if total==a[i] return 1<- when we have required sum for the given method call, add it to count.
+//        step 1. bases case if total==0 return 1<- when we have required sum for the given method call, add it to count.
 //
 //                s2. if total<0 return 0 ←. or subsets elements are larger than total
 //
