@@ -23,8 +23,8 @@ public class hub {
 //        test3.performAction();
 
 
-//        DPKnapsack test4 = new DPKnapsack();
-//        test4.doPerformAction();
+        DPKnapsack test4 = new DPKnapsack();
+        test4.doPerformAction();
 //
 //
 //        RecursionLongestSubsequenceString task4 = new RecursionLongestSubsequenceString();
@@ -33,8 +33,21 @@ public class hub {
 //
 //        DPLongestIncreasingSequence task5 = new DPLongestIncreasingSequence();
 //        task5.performAction();
+//
+//        DPBoxStacking task6 = new DPBoxStacking();
+//        task6.performAction();
 
-        DPBoxStacking task6 = new DPBoxStacking();
-        task6.performAction();
+
+//        SlidingWindowLongestRepeactingCharAndKBit task7 = new SlidingWindowLongestRepeactingCharAndKBit();
+//        task7.performAction();
+
+
+//        DPRodCuttingProblem task8 = new DPRodCuttingProblem();
+//        task8.doPerformAction();
+
+        //dpCoinChange task9 = new dpCoinChange();
+        //task9.doPerformAction();
+
+
     }
 }

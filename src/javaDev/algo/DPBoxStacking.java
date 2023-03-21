@@ -4,8 +4,13 @@ import java.util.*;
 
 public class DPBoxStacking {
 
-
+//    q5. dp box stacking
     private int doDPBoxStacking(List<List<Integer>> boxes){
+//        let s be the set of all boxes that can be stacked above (li,wi,hi), height[li,wi,hi] = Hi + max{height(lj,wj,hj)ES}
+//
+//        s1. loop through the array
+//
+//        s2. add all the boxj which can be placed on top of boxi. result Into an array. max(array)+boxi(h)
         Map<String,Integer> mem = new HashMap<>();
         for(int h=0;h<boxes.size();h++){
             mem.put(boxes.get(h).get(0).toString()+" "+boxes.get(h).get(1)+" "+boxes.get(h).get(2), boxes.get(h).get(2));
@@ -15,7 +20,7 @@ public class DPBoxStacking {
             List<Integer> subProblems = new ArrayList<>();
             for(int j=0;j<i;j++){
                 if(boxes.get(j).get(1)<width && boxes.get(j).get(0)<length)
-                    subProblems.add(boxes.get(j).get(2));
+                    subProblems.add(mem.get(boxes.get(j).get(0).toString()+" "+boxes.get(j).get(1)+" "+boxes.get(j).get(2)));
             }
             if(subProblems.size()>0) {
                 String key = boxes.get(i).get(0).toString()+" "+boxes.get(i).get(1)+" "+boxes.get(i).get(2);
@@ -36,12 +41,12 @@ public class DPBoxStacking {
     public void performAction(){
         List<List<Integer>> data = new ArrayList<>();
 
-        data.add(Arrays.asList(new Integer[]{2,3,4}));
-        data.add(Arrays.asList(new Integer[]{4,6,10}));
-        data.add(Arrays.asList(new Integer[]{6,12,9}));
-        data.add(Arrays.asList(new Integer[]{24,21,41}));
-        data.add(Arrays.asList(new Integer[]{4,2,4}));
-
+        data.add(Arrays.asList(new Integer[]{1,2,2}));
+        data.add(Arrays.asList(new Integer[]{2,3,2}));
+        data.add(Arrays.asList(new Integer[]{5,5,3}));
+//        data.add(Arrays.asList(new Integer[]{24,21,41}));
+//        data.add(Arrays.asList(new Integer[]{4,2,4}));
+        System.out.println("box");
         System.out.println(doDPBoxStacking(data));
     }
 }

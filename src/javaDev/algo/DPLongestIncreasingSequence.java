@@ -31,6 +31,7 @@ public class DPLongestIncreasingSequence {
                 if(A.get(j)<A.get(i))
                     subProblems.add(mem.get(j));
             }
+            System.out.println(mem);
             if(subProblems.size()>0)
                 mem.set(i,1+Collections.max(subProblems));
 //            System.out.println(mem);
