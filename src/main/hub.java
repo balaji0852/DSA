@@ -48,6 +48,11 @@ public class hub {
         //dpCoinChange task9 = new dpCoinChange();
         //task9.doPerformAction();
 
+//        DPDiceThrow taskn = new DPDiceThrow();
+//        taskn.performAction();
+
+        DSInvertBinaryTree taskn1 = new DSInvertBinaryTree();
+        taskn1.performAction();
 
     }
 }
